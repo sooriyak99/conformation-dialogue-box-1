@@ -1,0 +1,16 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+<div *ngFor="let name of nameList">
+	<span>{{name}}</span>
+</div>
+
+<div>
+  <button (click)="openConfirmationDialog()">Delete Name</button>
+</div>
+
+<div>
+	<button (click)="openConfirmationAddDialog()">Add Name</button>
+	<input type="text" [(ngModel)]="name">
+</div>
